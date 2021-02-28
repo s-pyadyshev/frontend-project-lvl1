@@ -1,9 +1,12 @@
 # Makefile
-install: # установить зависимости
+install: # install dependencies
 	npm install
 
-publish: # start
+publish: # publish
 	npm publish --dry-run
 
 brain-games: # start
 	node bin/brain-games.js
+
+lint: # lint
+	npx eslint .
