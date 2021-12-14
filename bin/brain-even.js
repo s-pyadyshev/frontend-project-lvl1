@@ -1,34 +1,36 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-const isEven = (number) => (number % 2 === 0 ? true : false);
+const isEven = (number) => (number % 2 === 0 ?? true);
 
 export const brainEven = () => {
-  const welcomeText = "Welcome to the Brain Games!";
-  const gameRulestext =
-    'Answer "yes" if the number is even, otherwise answer "no".';
-  const correctAnswerText = "Correct!";
+  const welcomeText = 'Welcome to the Brain Games!';
+  const gameRulestext = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const correctAnswerText = 'Correct!';
 
   // settings
   const questionsAmount = 3;
 
   // start game
   console.log(welcomeText);
-  const userName = readlineSync.question("May I have your name? ");
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(gameRulestext);
   const gameOverText = `Let's try again, ${userName}!`;
   const gameWinText = `Congratulations, ${userName}!`;
 
-  const convertAnswerToBoolean = (text) => {
-    if (text === "yes") {
+  function convertAnswerToBoolean(text) {
+    if (text === 'yes') {
       return true;
-    } else if (text === "no") {
+    }
+
+    if (text === 'no') {
       return false;
     }
+
     console.log(gameOverText);
-    process.exit();
-  };
+    return process.exit();
+  }
 
   const generateGameScheme = (steps) => {
     const scheme = [];
@@ -36,7 +38,7 @@ export const brainEven = () => {
       const step = {};
       const number = Math.floor(Math.random() * 100);
       step.number = number;
-      step.isEven = isEven(number) ? true : false;
+      step.isEven = isEven(number) ?? true;
       scheme.push(step);
     }
     return scheme;
@@ -56,6 +58,7 @@ export const brainEven = () => {
       console.log(gameOverText);
       process.exit();
     }
+    return null;
   });
 };
 
