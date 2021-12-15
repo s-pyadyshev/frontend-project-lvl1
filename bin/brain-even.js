@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { gameEngine } from "../src/index.js";
+import { gameEngine } from '../src/index.js';
 
 export const brainEven = () => {
   // function to check if answer is correct

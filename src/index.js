@@ -1,21 +1,21 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 export const gameEngine = (gameData, rules) => {
-  const userName = readlineSync.question("May I have your name? ");
+  const userName = readlineSync.question('May I have your name? ');
 
   const text = {
-    welcome: "Welcome to the Brain Games!",
-    correctAnswer: "Correct!",
+    welcome: 'Welcome to the Brain Games!',
+    correctAnswer: 'Correct!',
     lost: `Let's try again, ${userName}!`,
     win: `Congratulations, ${userName}!`,
   };
 
   function convertAnswerToBoolean(question) {
-    if (question === "yes") {
+    if (question === 'yes') {
       return true;
     }
 
-    if (question === "no") {
+    if (question === 'no') {
       return false;
     }
 
@@ -34,9 +34,7 @@ export const gameEngine = (gameData, rules) => {
   const generateGameScheme = (steps) => {
     const scheme = [];
     for (let i = 0; i < steps; i += 1) {
-      const gameItem = gameData();
-      const question = gameItem.question;
-      const answer = gameItem.answer;
+      const { question, answer } = gameData();
       scheme.push({ question, answer });
     }
     return scheme;
