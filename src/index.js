@@ -16,7 +16,7 @@ export const gameEngine = (game) => {
   // start game
   console.log(text.welcome);
   console.log(`Hello, ${userName}!`);
-  console.log(game.rules);
+  console.log(game().rules);
 
   const generateGameScheme = (steps) => {
     const scheme = [];
