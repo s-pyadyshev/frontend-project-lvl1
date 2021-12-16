@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const gameEngine = (gameData, rules) => {
+export const gameEngine = (game) => {
   const userName = readlineSync.question('May I have your name? ');
 
   const text = {
@@ -16,19 +16,18 @@ export const gameEngine = (gameData, rules) => {
   // start game
   console.log(text.welcome);
   console.log(`Hello, ${userName}!`);
-  console.log(rules);
+  console.log(game.rules);
 
   const generateGameScheme = (steps) => {
     const scheme = [];
     for (let i = 0; i < steps; i += 1) {
-      const { question, answer } = gameData();
+      const { question, answer } = game();
       scheme.push({ question, answer });
     }
     return scheme;
   };
 
   const gameScheme = generateGameScheme(questionsAmount);
-  console.log(gameScheme);
 
   gameScheme.forEach((item, index) => {
     const schemeLength = gameScheme.length;
