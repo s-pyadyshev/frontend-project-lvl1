@@ -10,19 +10,6 @@ export const gameEngine = (gameData, rules) => {
     win: `Congratulations, ${userName}!`,
   };
 
-  function convertAnswerToBoolean(question) {
-    if (question === 'yes') {
-      return true;
-    }
-
-    if (question === 'no') {
-      return false;
-    }
-
-    console.log(text.lost);
-    return process.exit();
-  }
-
   // settings
   const questionsAmount = 3;
 
@@ -41,12 +28,17 @@ export const gameEngine = (gameData, rules) => {
   };
 
   const gameScheme = generateGameScheme(questionsAmount);
+  console.log(gameScheme);
 
   gameScheme.forEach((item, index) => {
     const schemeLength = gameScheme.length;
     const answer = readlineSync.question(`Question: ${item.question} `);
 
-    if (convertAnswerToBoolean(answer) === item.answer) {
+    if (
+      answer === item.answer
+      || (answer === 'yes' && item.answer === true)
+      || (answer === 'no' && item.answer === false)
+    ) {
       console.log(text.correctAnswer);
 
       if (index + 1 === schemeLength) return console.log(text.win);
