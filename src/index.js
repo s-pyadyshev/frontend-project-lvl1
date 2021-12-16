@@ -16,7 +16,7 @@ export const gameEngine = (game) => {
   // start game
   console.log(text.welcome);
   console.log(`Hello, ${userName}!`);
-  console.log(game.rules);
+  console.log(game().rules);
 
   const generateGameScheme = (steps) => {
     const scheme = [];
@@ -28,6 +28,7 @@ export const gameEngine = (game) => {
   };
 
   const gameScheme = generateGameScheme(questionsAmount);
+  console.log(gameScheme);
 
   gameScheme.forEach((item, index) => {
     const schemeLength = gameScheme.length;
