@@ -1,18 +1,21 @@
 export const primeGame = () => {
-  const isEven = (number) => {
-    if (number % 2 === 0) {
-      return 'yes';
+  const isPrime = (num) => {
+    if (num < 2) return false;
+    for (let i = 2; i < num; i += 1) {
+      if (num % i === 0) {
+        return 'no';
+      }
     }
-    return 'no';
+    return 'yes';
   };
 
   const question = Math.floor(Math.random() * 100);
-  const answer = isEven(question);
+  const answer = isPrime(question);
 
   return {
     question,
     answer,
-    rules: 'Answer "yes" if the number is even, otherwise answer "no".',
+    rules: 'Answer "yes" if given number is prime. Otherwise answer "no".',
   };
 };
 
