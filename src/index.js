@@ -28,21 +28,17 @@ export const gameEngine = (game) => {
   };
 
   const gameScheme = generateGameScheme(questionsAmount);
-  console.log(gameScheme);
 
   gameScheme.forEach((item, index) => {
     const schemeLength = gameScheme.length;
     const answer = readlineSync.question(`Question: ${item.question} `);
 
-    if (
-      answer === item.answer
-      || (answer === 'yes' && item.answer === true)
-      || (answer === 'no' && item.answer === false)
-    ) {
+    if (answer === item.answer) {
       console.log(text.correctAnswer);
 
       if (index + 1 === schemeLength) return console.log(text.win);
     } else {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${item.answer}'.`);
       console.log(text.lost);
       process.exit();
     }
