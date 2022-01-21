@@ -5,7 +5,7 @@
 
 Brain Even
 $ node ./bin/brain-even.js
-[![asciicast](https://asciinema.org/a/VlGzCEKjy1fiHBQaxImIMcjw5.svg)](https://asciinema.org/a/VlGzCEKjy1fiHBQaxImIMcjw5)
+[![asciicast](https://asciinema.org/a/mb8Eeapedj7PcH3NDG8oOAXkT.svg)](https://asciinema.org/a/mb8Eeapedj7PcH3NDG8oOAXkT)
 
 Brain Calc
 $ node ./bin/brain-calc.js
