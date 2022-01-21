@@ -5,17 +5,20 @@
 
 Brain Even
 $ node ./bin/brain-even.js
-[![asciicast](https://asciinema.org/a/YEh5Fc1LCCniFNqe42jwBqXb1.svg)](https://asciinema.org/a/YEh5Fc1LCCniFNqe42jwBqXb1)
+[![asciicast](https://asciinema.org/a/VlGzCEKjy1fiHBQaxImIMcjw5.svg)](https://asciinema.org/a/VlGzCEKjy1fiHBQaxImIMcjw5)
 
 Brain Calc
 $ node ./bin/brain-calc.js
-[![asciicast](https://asciinema.org/a/eF3emk4fwjUBw86xm9ls4zMrF.svg)](https://asciinema.org/a/eF3emk4fwjUBw86xm9ls4zMrF)
+[![asciicast](https://asciinema.org/a/Z3rHrGfV6SV8hyFwQid7TmP86.svg)](https://asciinema.org/a/Z3rHrGfV6SV8hyFwQid7TmP86)
 
 Brain GCD (Greatest Common Divisor)
 $ node ./bin/brain-gcd.js
+[![asciicast](https://asciinema.org/a/6vCEiLkO14RoTjHPPEAh1SZfS.svg)](https://asciinema.org/a/6vCEiLkO14RoTjHPPEAh1SZfS)
 
 Brain Progression
 $ node ./bin/brain-progression.js
+[![asciicast](https://asciinema.org/a/6vLdozaKldGcvntHJ4qSvyABr.svg)](https://asciinema.org/a/6vLdozaKldGcvntHJ4qSvyABr)
 
 Brain Prime
 $ node ./bin/brain-prime.js
+[![asciicast](https://asciinema.org/a/1uiMRdHCcqWNygZRxOIl99ETa.svg)](https://asciinema.org/a/1uiMRdHCcqWNygZRxOIl99ETa)
