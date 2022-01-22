@@ -1,7 +1,7 @@
 export const evenGame = () => {
   const isEven = (number) => number % 2 === 0;
   const question = Math.floor(Math.random() * 100);
-  const answer = isEven(question) ? "yes" : "no";
+  const answer = isEven(question) ? 'yes' : 'no';
 
   return {
     question,
