@@ -28,7 +28,6 @@ export const gameEngine = (game) => {
   };
 
   const gameScheme = generateGameScheme(questionsAmount);
-  console.log(gameScheme);
 
   gameScheme.forEach((item, index) => {
     const schemeLength = gameScheme.length;
