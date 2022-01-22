@@ -13,21 +13,21 @@ make install<br>
 npm link
 
 ### Brain Even
-$ make even
+$ brain-even
 [![asciicast](https://asciinema.org/a/mb8Eeapedj7PcH3NDG8oOAXkT.svg)](https://asciinema.org/a/mb8Eeapedj7PcH3NDG8oOAXkT)
 
 ### Brain Calc
-$ make calc
+$ brain-calc
 [![asciicast](https://asciinema.org/a/Z3rHrGfV6SV8hyFwQid7TmP86.svg)](https://asciinema.org/a/Z3rHrGfV6SV8hyFwQid7TmP86)
 
 ### Brain GCD (Greatest Common Divisor)
-$ make gcd
+$ brain-gcd
 [![asciicast](https://asciinema.org/a/6vCEiLkO14RoTjHPPEAh1SZfS.svg)](https://asciinema.org/a/6vCEiLkO14RoTjHPPEAh1SZfS)
 
 ### Brain Progression
-$ make progression
+$ brain-progression
 [![asciicast](https://asciinema.org/a/6vLdozaKldGcvntHJ4qSvyABr.svg)](https://asciinema.org/a/6vLdozaKldGcvntHJ4qSvyABr)
 
 ### Brain Prime
-$ make prime
+$ brain-prime
 [![asciicast](https://asciinema.org/a/1uiMRdHCcqWNygZRxOIl99ETa.svg)](https://asciinema.org/a/1uiMRdHCcqWNygZRxOIl99ETa)
